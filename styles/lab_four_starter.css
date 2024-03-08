@@ -83,6 +83,8 @@
 }
 
 .accordion {
+  display: flex;
+  justify-content: space-between;
   background-color: #eee; /* Light grey background */
   color: #444; /* Dark grey text */
   cursor: pointer; /* Changes the mouse cursor to a pointer */
@@ -95,9 +97,19 @@
   transition: 0.4s; /* Adds animation when clicked */
 }
 
+.accordion-container .accordion-content.active svg{
+  transform: rotate(0.5turn);
+
+}
 /* Change background color when moving over button */
 .accordion:hover {
   background-color: #ccc; /* Darker grey */
+}
+
+.accordion svg{
+  display: inline;
+  width: 1em;
+
 }
 
 
