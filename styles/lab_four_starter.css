@@ -45,6 +45,11 @@
   text-align: center;
 }
 
+.center-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
 /* content paragraph */
 .content-container p{
   width: fit-content;
