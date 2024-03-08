@@ -199,6 +199,7 @@ padding: 2rem;
 
   .footer-container iframe{
     max-width: 100vw;
+    padding: 0;
   }
 
 
