@@ -1,4 +1,4 @@
-.remove-assignment-content {
+/* .remove-assignment-content {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -6,23 +6,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
+
+/* --------------HERO---------------*/
 .hero-container {
-  background-color: #403d58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/herobanner.jpg);
   color: #fff;
-  height: 100vh;
-  
-  width: 100%;
-  height: auto;
+  min-height: 100vh;
   background-position: center;
-  /*background-repeat: no-repeat; can maybe delete */
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
-
+/* ------------CONTENT------------- */
 .content-container li{
   display: flex;
   justify-content: center;
@@ -39,25 +40,63 @@
     margin-right: 2rem;
 
   }
-  
+
 .contents h1, p{
   text-align: center;
 }
+
 /* content paragraph */
 .content-container p{
   width: fit-content;
   background-color: #8ca0ff;
   padding: 5px;
   margin-bottom: 1em;
-  }
+  color: black;
+}
 }
 
+
+/* ------------ACCORDION------------- */
 .accordion-container {
-  background-color: #fc7753;
-  color: #fff;
+  /* background-color: #fc7753; */
   height: 600px;
 }
 
+/* Height of 0*/
+.accordion-container li .panel {
+  position: relative;
+  overflow: hidden;
+  overflow: auto;
+  height: 0;
+  transition: all 400ms;
+}
+
+/* height of 120 px */
+.accordion-container .accordion-content.active .panel {
+  min-height: 120px;
+  padding: 10px 18px;
+}
+
+.accordion {
+  background-color: #eee; /* Light grey background */
+  color: #444; /* Dark grey text */
+  cursor: pointer; /* Changes the mouse cursor to a pointer */
+  padding: 18px; /* Top and bottom padding */
+  width: 100%; /* Full width */
+  border: none; /* No border */
+  text-align: left; /* Text aligned to the left */
+  outline: none; /* No outline */
+  font-size: 15px; /* Font size */
+  transition: 0.4s; /* Adds animation when clicked */
+}
+
+/* Change background color when moving over button */
+.accordion:hover {
+  background-color: #ccc; /* Darker grey */
+}
+
+
+/* --------FOOOTER------- */
 .footer-container {
   background-color: #f2efea;
   width: 100%;
