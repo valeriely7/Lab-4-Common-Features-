@@ -9,8 +9,6 @@
 } */
 
 
-/* --------------HERO---------------*/
-
 /* font Ubuntu */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
@@ -19,7 +17,7 @@ body{
     font-weight: 300;
     font-style: normal;
   }
-
+/* --------------HERO---------------*/
 .hero-container {
   display: flex;
   align-items: center;
@@ -40,12 +38,10 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* align-content: flex-start;
-  flex-direction: row-reverse; */
 }
 
 .content-container {
-  background-color: #dbd56e;
+  background-color: #FFF0F5;
 
   img{
     width: auto;
@@ -67,10 +63,8 @@ body{
   /* content paragraph */
   .content-container p{
     width: fit-content;
-    background-color: #8ca0ff;
     padding: 5px;
     margin-bottom: 1em;
-    color: black;
   }
 }
 
@@ -101,23 +95,25 @@ body{
   padding: 18px; /* Top and bottom padding */
   width: 100%; /* Full width */
   border: none; /* No border */
-  text-align: left; /* Text aligned to the left */
-  outline: none; /* No outline */
   font-size: 15px; /* Font size */
   transition: 0.4s; /* Adds animation when clicked */
 }
 
-/*animating icon*/
+.accordion-container{
+  margin-bottom: 4rem;
+}
+
+/*rotating icon*/
 .accordion-container .accordion-content.active svg{
   transform: rotate(0.5turn);
-
 }
+
 /* Change background color when moving over button */
 .accordion:hover {
   background-color: #ccc; /* Darker grey */
 }
 
-/*icon*/
+/*icon sizing*/
 .accordion svg{
   display: inline;
   width: 1em;
@@ -131,7 +127,7 @@ body{
   position: relative;
 }
 
-/* footer list container that aligns just the list */
+/* Footer Pink Background*/
 .pink{
   background-color: rosybrown;
   display: flex;
@@ -140,6 +136,9 @@ body{
   flex-wrap: wrap;
   padding: 2rem;
 }
+
+/*Footer Link Text*/
+
 .footer-link li {
   display: flex;
   align-content: space-around;
@@ -147,8 +146,6 @@ body{
   margin-bottom: 1rem;
 }
 
-
-/* Links texts */
 .footer-link a{
   color: white;
   text-decoration: underline;
@@ -157,6 +154,7 @@ body{
 .footer-link a:hover{
   color: lightblue;
 }
+
 /* Google maps */
 .footer-container iframe{
 display: block;
@@ -176,15 +174,6 @@ padding: 2rem;
 
 /* Responsiveness*/
 
-/* Tablets */
-/* @media screen and (min-width: 768px) {
-
-  .accordion-container{
-    margin: 8rem 11rem 5rem 11rem;
-  }
-} */
-
-
 @media screen and (max-width: 768px) {
   .content-container img{
     height: auto;
@@ -201,7 +190,6 @@ padding: 2rem;
     max-width: 100vw;
     padding: 0;
   }
-
 
 }     
 
