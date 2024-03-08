@@ -1,3 +1,11 @@
+//Button
+const send = document.getElementById("btn-alert");
+    let sent = "Hello World";
+    send.addEventListener("click", () => {
+        alert(sent);
+    })
+
+
 //Accordion
 const acc = document.getElementsByClassName ("accordion-content");
 
