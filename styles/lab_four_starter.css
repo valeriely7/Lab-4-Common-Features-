@@ -98,8 +98,67 @@
 
 /* --------FOOOTER------- */
 .footer-container {
-  background-color: #f2efea;
   width: 100%;
   height: 300px;
   position: relative;
+}
+
+/* footer list container that aligns just the list */
+.pink{
+  background-color: rosybrown;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer-link li {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column; 
+  margin-bottom: 1rem;
+}
+
+
+/* Links texts */
+.footer-link a{
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-link a:hover{
+  color: lightblue;
+}
+/* Google maps */
+.footer-container iframe{
+display: block;
+margin: auto;
+padding: 2rem;
+
+} 
+
+/* Copyright */
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+
+/* Responsiveness*/
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+  /* Margins around the accordion section */
+  .accordion-container{
+    margin: 8rem 11rem 5rem 11rem;
+  }
+}
+/* Large desktops/laptops */
+@media screen and (min-width: 1500px) {
+  /* Margins around the accordion section */
+  .accordion-container{
+    margin: 8rem 10rem 5rem 10rem;
+  }
 }

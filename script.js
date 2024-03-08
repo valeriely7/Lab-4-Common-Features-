@@ -1,4 +1,5 @@
 const acc = document.getElementsByClassName ("accordion-content");
+
 let i;
 
 for (i = 0; i < acc.length; i++) {
