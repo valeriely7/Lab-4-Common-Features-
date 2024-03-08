@@ -10,6 +10,16 @@
 
 
 /* --------------HERO---------------*/
+
+/* font Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
 .hero-container {
   display: flex;
   align-items: center;
@@ -21,6 +31,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
 
 }
 /* ------------CONTENT------------- */
@@ -97,6 +108,7 @@
   transition: 0.4s; /* Adds animation when clicked */
 }
 
+/*animating icon*/
 .accordion-container .accordion-content.active svg{
   transform: rotate(0.5turn);
 
@@ -106,6 +118,7 @@
   background-color: #ccc; /* Darker grey */
 }
 
+/*icon*/
 .accordion svg{
   display: inline;
   width: 1em;
