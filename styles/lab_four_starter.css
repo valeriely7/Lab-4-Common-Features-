@@ -37,13 +37,15 @@ body{
 /* ------------CONTENT------------- */
 .content-container li{
   display: flex;
+ flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  /* align-content: flex-start;
+  flex-direction: row-reverse; */
 }
 
 .content-container {
   background-color: #dbd56e;
-  height: 600px;
 
   img{
     width: auto;
@@ -52,31 +54,28 @@ body{
 
   }
 
-.contents h1, p{
-  text-align: center;
-}
+  .contents h1, p{
+    text-align: center;
+    max-width: 500px;
+  }
 
-.center-wrapper{
-  display: flex;
-  justify-content: center;
-}
+  .center-wrapper{
+    display: flex;
+    justify-content: center;
+  }
 
-/* content paragraph */
-.content-container p{
-  width: fit-content;
-  background-color: #8ca0ff;
-  padding: 5px;
-  margin-bottom: 1em;
-  color: black;
-}
+  /* content paragraph */
+  .content-container p{
+    width: fit-content;
+    background-color: #8ca0ff;
+    padding: 5px;
+    margin-bottom: 1em;
+    color: black;
+  }
 }
 
 
 /* ------------ACCORDION------------- */
-.accordion-container {
-  /* background-color: #fc7753; */
-  height: 600px;
-}
 
 /* Height of 0*/
 .accordion-container li .panel {
@@ -122,7 +121,6 @@ body{
 .accordion svg{
   display: inline;
   width: 1em;
-
 }
 
 
@@ -187,8 +185,16 @@ padding: 2rem;
 }
 /* Large desktops/laptops */
 @media screen and (min-width: 1500px) {
-  /* Margins around the accordion section */
-  .accordion-container{
-    margin: 8rem 10rem 5rem 10rem;
-  }
+
 }
+
+
+@media screen and (max-width: 768px) {
+  .content-container img{
+    height: auto;
+    width: 100%;
+    margin: 2em;
+  }
+}     
+
+  
